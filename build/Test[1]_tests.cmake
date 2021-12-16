@@ -1,0 +1,5 @@
+add_test( UnitaryTest.ProblemTest /home/dendanilamia/TD_4/build/Test [==[--gtest_filter=UnitaryTest.ProblemTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties( UnitaryTest.ProblemTest PROPERTIES WORKING_DIRECTORY /home/dendanilamia/TD_4/build)
+add_test( MainFunctionTest.EquationTest /home/dendanilamia/TD_4/build/Test [==[--gtest_filter=MainFunctionTest.EquationTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties( MainFunctionTest.EquationTest PROPERTIES WORKING_DIRECTORY /home/dendanilamia/TD_4/build)
+set( Test_TESTS UnitaryTest.ProblemTest MainFunctionTest.EquationTest)
